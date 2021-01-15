@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.1.1">
+    <title>Borç Defteri - Giriş</title>
+    <link rel="shortcut icon" type="image/jpg" href="img/favicon.ico"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css">
+
+    <link rel="stylesheet" href="login.css">
+</head>
+
+
+<body class="text-center">
+    <div id="loading" class="d-none">
+        <div class="spinner-border text-success" role="status">
+            <span class="sr-only">Loading...</span> $
+        </div>
+    </div>
+    <form class="form-signin" id="frmGiris">
+        <div id="hata" class="alert alert-danger"> </div>
+        <div id="basari" class="alert alert-success"> </div>
+        <img class="mb-4" src="img/borclogo.png" alt="" width="72" height="72">
+        <h1 class="h3 mb-3 font-weight-normal">Lütfen Giriş Yapın</h1>
+        <label for="inputEmail" class="sr-only">Email </label>
+        <input type="email" id="inputEmail" class="form-control" placeholder="Email " autofocus required>
+        <label for="inputPassword" class="sr-only">Şifre</label>
+        <input type="password" id="inputPassword" class="form-control" placeholder="Şifre" required>
+        <div class="checkbox mb-3">
+            <label>
+                <input id="rememberme" type="checkbox" value="remember-me"> Beni Hatırla
+            </label>
+        </div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Giriş Yap</button>
+        <a href="#" id="registerOpen">Hesabınız yok mu hemen oluşturun...</a>
+        <p class="mt-5 mb-3 text-muted">&copy; 2017-2020</p>
+    </form>
+    <form class="form-signin d-none" id="frmRegister" method="POST">
+        <img class="mb-4" src="img/borclogo.png" alt="" width="72" height="72">
+        <h1 class="h3 mb-3 font-weight-normal">Kayıt Bilgilerinizi Girin</h1>
+        <input type="email" id="inputEmailRegister" class="form-control" placeholder="Email " required>
+        <input type="password" id="inputPasswordRegister" class="form-control" placeholder="Şifre" required>
+        <input type="password" id="inputPasswordRegisterDoğrula" class="form-control" placeholder="Şifre Doğrulama"
+            required>
+        <button class="btn btn-lg btn-primary btn-block mt-5" type="submit">Kayıt Ol</button>
+        <a href="#" id="loginOpen">Giriş Ekranına Dön...</a>
+    </form>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
+<script src="js/index.js"></script>
+
+</html>
